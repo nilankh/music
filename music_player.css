@@ -1,0 +1,166 @@
+.music_player{
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    background-color: #282828;
+    align-items: center;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.music_player .music_details{
+    align-items: center;
+    height: 80px;
+    padding: 10px 0;
+}
+
+.music_details .music_image{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.music_details .music_image img{
+    height: inherit;
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.music_details .music_image img:hover{
+    opacity: 0.7;
+}
+
+.music_details .music_name{
+    font-weight: 500;
+    color: white;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.music_details .music_name .song_name{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.music_details .music_name .artist_name{
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.music_details .other{
+    color: inherit;
+    font-size: 1rem;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+.music_details .other label{
+    cursor: pointer;
+    margin-right: 5px;
+} 
+
+.music_details .other input{
+    display: none;
+}
+
+.music_details .other input:checked ~ label{
+    color: red;
+}
+
+.music_controls{
+    justify-content: center;
+    width: 400px;
+    color: #c7c0c0;
+}
+
+.music_controls .music_buttons{
+    width: inherit;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.music_controls .music_buttons label{
+    cursor: pointer;
+} 
+
+.music_controls .music_buttons input{
+    display: none;
+}
+
+.music_controls .music_buttons #pause{
+    display: none;
+}
+
+.music_controls .music_buttons input:checked ~ #play{
+    display: none;
+}
+
+.music_controls .music_buttons input:checked ~ #pause{
+    display: flex;
+}
+
+.music_progress{
+    align-items: center;
+    cursor: pointer;
+}
+
+.music_progress .progress_bar1{
+    width: 100px;
+    height: 4px;
+    background-color: green;
+    position: relative;
+}
+
+.music_progress .progress_bar1 .point{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    top: -5px;
+    left: 95px;
+}
+
+.music_progress .progress_bar2{
+    width: 200px;
+    height: 4px;
+    background-color: white;
+}
+
+.volume_controls{
+    align-items: center;
+    color: white;
+}
+
+.volume_controls .progress_bar1{
+    width: 20px;
+    height: 3px;
+    background-color: green;
+    cursor: pointer;
+    position: relative;
+}
+
+.volume_controls .progress_bar1 .point{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    top: -6px;
+    left: 15px;
+}
+
+.volume_controls .progress_bar2{
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    cursor: pointer;
+}

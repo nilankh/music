@@ -1,0 +1,554 @@
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0c1027;
+}
+
+.album_info{
+    padding: 0 30px;
+    margin-top: 130px;
+    margin-bottom: 80px;
+}
+
+/* Album */
+.album_info .artist{
+    width: 70%;
+    height: fit-content;
+    padding: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.artist .artist_header{
+    width: 100%;
+    height: 250px;
+    background-color: #141b41;
+    margin-bottom: 30px;
+}
+
+.artist .artist_image{
+    width: 250px;
+    height: 250px;
+}
+
+.artist .artist_image img{
+    width: inherit;
+    height: inherit;
+}
+
+.artist .artist_des{
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.artist .artist_n_f{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.artist .artist_n_f .artist_name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.artist .artist_n_f .artist_followers{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #b1b3c0;
+}
+
+.artist .artist_type{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #b1b3c0;
+    margin-bottom: 8px;
+}
+
+.artist .artist_description{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #b1b3c0;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.artist .artist_actions{
+    width: 70%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.artist .artist_actions .btn_play_all{
+    padding: 10px 30px;
+    background: linear-gradient(90deg, rgba(64,39,179,1) 0%, rgba(192,71,222,1) 50%);
+    font-size: 1rem;
+    border: none;
+    white-space: nowrap;
+    color: white;
+    margin-right: 20px;
+}
+
+.artist .artist_actions .btn_follow{
+    cursor: pointer;
+}
+
+.artist .artist_history{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* Artist Body */
+.artist .artist_body{
+    padding: 0;
+}
+
+.artist .artist_body ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.artist .artist_body ul li{
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.artist .artist_body ul li:nth-child(2n+1){
+    background-color: #1a1e33;
+}
+
+.artist .artist_body ul li:nth-child(2n){
+    background-color: #202439;
+}
+
+.artist .artist_body .song{
+    align-items: center;
+    justify-content: space-between;
+    color: #93a8b3;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.artist_body .song .song_image_details{
+    align-items: center;
+}
+
+.artist_body .song_image_details .music_bars{
+    align-items: flex-end;
+}
+
+.artist_body .song_image_details .music_bars div{
+    border: 2px solid #21b7d8;
+    margin-right: 2px;
+}
+
+.artist_body .song_image_details .music_bars div:nth-child(3n + 1){
+    height: 0;
+    animation: updown 0.5s ease 0s infinite;
+}
+
+.artist_body .song_image_details .music_bars div:nth-child(3n + 2){
+    height: 0;
+    animation: updown 0.5s ease 0.2s infinite;
+}
+
+.artist_body .song_image_details .music_bars div:nth-child(3n){
+    height: 0;
+    animation: updown 0.5s ease 0.4s infinite;
+}
+
+@keyframes updown{
+    from{
+        height: 0;
+    }
+    to{
+        height: 15px;
+    }
+}
+
+.artist_body .song_image_details .song_number{
+    font-size: 1rem;
+}
+
+.artist_body .song_image_details .song_image{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px 1px #2ca8b5;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.artist_body .song_image_details .song_image img{
+    width: inherit;
+    height: inherit;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.artist_body .song_image_details .song_image .play_btn{
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.artist_body .song_image_details .song_image:hover{
+    box-shadow: 0px 0px 5px 4px #2ca8b5;
+    border-radius: 50%;
+}
+
+.artist_body .song_image_details .song_image:hover img{
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.artist_body .song_image_details .song_image:hover .play_btn{
+    opacity: 1;
+}
+
+.artist_body .song_details .song_name{
+    font-size: 1rem;
+    color: white;
+}
+
+.artist_body .song_details .artist_name{
+    font-size: 0.9rem;
+}
+
+.artist_body .song .favourite{
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.artist_body .song .favourite label{
+    cursor: pointer;
+    margin-right: 20px;
+} 
+
+.artist_body .song .favourite input{
+    display: none;
+}
+
+.artist_body .song .favourite input:checked ~ label{
+    color: red;
+}
+
+/* Queue List */
+.album_info .queueList{
+    width: 30%;
+    height: fit-content;
+    padding-top: 30px;
+    font-family: sans-serif;
+}
+
+.queueHeader{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.queueHeader .header{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.queueHeader .viewAll{
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* 1st Queue */
+
+
+.queueList .queue_artist{
+    padding-top: 20px;
+}
+
+.queueList .queue_artist ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.queueList .queue_artist .song{
+    align-items: center;
+    justify-content: space-between;
+    color: #93a8b3;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.queue_artist .song .song_image_details{
+    align-items: center;
+}
+
+.queue_artist .song_image_details .song_image{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px 1px #2ca8b5;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.queue_artist .song_image_details .song_image img{
+    width: inherit;
+    height: inherit;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.queue_artist .song_image_details .song_image:hover img{
+    opacity: 0.7;
+}
+
+.queue_artist .song_details{
+    height: 80px;
+    justify-content: space-evenly;
+}
+
+.queue_artist .song_details .song_name{
+    font-size: 1rem;
+    color: white;
+}
+
+.queue_artist .song_details .artist_name{
+    font-size: 0.8rem;
+}
+
+.queue_artist .favourite{
+    align-self: flex-start;
+    align-items: flex-end;
+}
+
+.queue_artist .album_dropdown{
+    align-items: flex-end;
+    position: relative;
+}
+
+.queue_artist .album_dropdown input{
+    display: none;
+}
+
+.queue_artist .album_dropdown label{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.queue_artist .album_dropdown input:checked ~ .album_dropdown_menu{
+    display: flex;
+}
+
+.queue_artist .album_dropdown .album_dropdown_menu{
+    background-color: white;
+    color: black;
+    padding: 7px;
+    font-weight: 600;
+    font-size: 0.8rem;    
+    margin: 10px;
+    margin-top: 0;
+    white-space: nowrap;
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: -145px;
+}
+
+.queue_artist .album_dropdown .album_dropdown_menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.queue_artist .album_dropdown .album_dropdown_menu ul li{
+    margin: 8px 5px;
+    cursor: pointer;
+}
+
+/* 2nd Queue */
+.queueList .queue{
+    padding: 25px;
+}
+
+.queueList .queue ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.queueList .queue .song{
+    align-items: center;
+    justify-content: space-between;
+    color: #93a8b3;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.queue .song .song_image_details{
+    align-items: center;
+}
+
+.queue .song_image_details .music_bars{
+    align-items: flex-end;
+}
+
+.queue .song_image_details .music_bars div{
+    border: 2px solid #21b7d8;
+    margin-right: 2px;
+}
+
+.queue .song_image_details .music_bars div:nth-child(3n + 1){
+    height: 0;
+    animation: updown 0.5s ease 0s infinite;
+}
+
+.queue .song_image_details .music_bars div:nth-child(3n + 2){
+    height: 0;
+    animation: updown 0.5s ease 0.2s infinite;
+}
+
+.queue .song_image_details .music_bars div:nth-child(3n){
+    height: 0;
+    animation: updown 0.5s ease 0.4s infinite;
+}
+
+@keyframes updown{
+    from{
+        height: 0;
+    }
+    to{
+        height: 15px;
+    }
+}
+
+.queue .song_image_details .song_number{
+    font-size: 1rem;
+}
+
+.queue .song_image_details .song_image{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px 1px #2ca8b5;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.queue .song_image_details .song_image img{
+    width: inherit;
+    height: inherit;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.queue .song_image_details .song_image .play_btn{
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.queue .song_image_details .song_image:hover{
+    box-shadow: 0px 0px 5px 4px #2ca8b5;
+    border-radius: 50%;
+}
+
+.queue .song_image_details .song_image:hover img{
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.queue .song_image_details .song_image:hover .play_btn{
+    opacity: 1;
+}
+
+.queue .song_details .song_name{
+    font-size: 1rem;
+    color: white;
+}
+
+.queue .song_details .artist_name{
+    font-size: 0.9rem;
+}
+
+.queue .song .favourite{
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.queue .song .favourite:hover{
+    font-size: 1.3rem;
+}
+
+.queue .song .favourite label{
+    cursor: pointer;
+} 
+
+.queue .song .favourite input{
+    display: none;
+}
+
+.queue .song .favourite input:checked ~ label{
+    color: red;
+}
+
+@media (max-width: 1000px){
+
+}
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 600px){
+    .album_info .artist{
+        width: 100%;
+    }
+    .album_info .queueList{
+        display: none;
+    }
+}

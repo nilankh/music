@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Artist Playlist</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='navbar.css'>
+    <link rel='stylesheet' type='text/css' href='artistPlaylist.css'>
+    <link rel='stylesheet' type='text/css' href='music_player.css'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body class="flex-c">
+    <!-- Navbar -->
+    <div class="flex-r navbar">
+        <div class="flex-r navbarLeftSide">
+            <div class="flex-r logo">
+                <div class="flex-c logoImage">
+                    <img src="images/HomeLogo.png">
+                </div>
+                <div class="flex-c logoName">
+                    <span>Ninja</span>
+                    <span>Studios</span>
+                </div>
+            </div>
+
+            <div class="flex-c fav">
+                <span>Favourites</span>
+            </div>
+        </div>
+        <div class="flex-r navbarRightSide">
+            <div class="flex-c searchInput">
+                <span class="search-mic-icon">
+                    <input type="text" placeholder="Search..." />
+                </span>
+            </div>
+            <div class="flex-c notification">
+                <div class="notification-bell">
+                    <span><i class="fa fa-bell"></i></span>
+                </div>
+            </div>
+            <div class="flex-c profile">
+                <div class="profileImage">
+                    <img src="images/profileImage.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-r album_info">
+
+        <div class="flex-c artist">
+            <div class="flex-r artist_header">
+                <div class="artist_image">
+                    <img src="https://lh3.googleusercontent.com/CbEOiCPV0KL-kpTvPaVJKI6Xqq69HCoGPGkA1zdauXoDN5BqcgvY7rSpUQ=s180-c-e100-rwu-v1" />
+                </div>
+                <div class="flex-c artist_des">
+                    <div class="flex-r artist_n_f">
+                        <span class="artist_name">Lata Mangeshkar</span>
+                        <span class="artist_followers">851K Followers</span>
+                    </div>
+                    <span class="artist_type">British Band</span>
+                    <span class="artist_description">Lata Mangeshkar is an Indian playback singer and music director. She is one of the best-known and most respected playback singers in India.She has recorded songs in over a thousand Hindi films and has sung songs in over thirty-six regional Indian languages and foreign languages, though primarily in Marathi, Hindi, and Bengali.
+
+                    The Dadasaheb Phalke Award was bestowed on her in 1989 by the Government of India. In 2001, in recognition of her contributions to the nation, she was awarded the Bharat Ratna, India's highest civilian honour and is only the second vocalist, after M. S. Subbulakshmi, to receive this honour.France conferred on her its highest civilian award (Officer of the Legion of Honour) in 2007.</span>
+                    <div class="flex-r artist_actions">
+                        <button type="button" class="btn_play_all">Play All</button>
+                        <span class="btn_follow">Follow</span>
+                    </div>
+                    <span class="artist_history">240 Tracks | 147 artists</span>
+                </div>
+            </div>
+
+            <div class="artist_body">
+                <ul>
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>01</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-r favourite">
+                                <input type="checkbox" id="artistFav1" />
+                                <label for="artistFav1"><span><i class="fa fa-heart"></i></span></label>
+                                <span><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>02</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-r favourite">
+                                <input type="checkbox" id="artistFav2" />
+                                <label for="artistFav2"><span><i class="fa fa-heart"></i></span></label>
+                                <span><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>03</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-r favourite">
+                                <input type="checkbox" id="artistFav3" />
+                                <label for="artistFav3"><span><i class="fa fa-heart"></i></span></label>
+                                <span><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>04</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-r favourite">
+                                <input type="checkbox" id="artistFav4" />
+                                <label for="artistFav4"><span><i class="fa fa-heart"></i></span></label>
+                                <span><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>05</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-r favourite">
+                                <input type="checkbox" id="artistFav5" />
+                                <label for="artistFav5"><span><i class="fa fa-heart"></i></span></label>
+                                <span><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>06</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-r favourite">
+                                <input type="checkbox" id="artistFav6" />
+                                <label for="artistFav6"><span><i class="fa fa-heart"></i></span></label>
+                                <span><i class="fa fa-plus"></i></span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Page Queue -->
+        <div class="queueList">
+            <div class="flex-r queueHeader">
+                <span class="header">Similar Artists</span>
+                <span class="viewAll">View All</span>
+            </div>
+
+            <div class="queue_artist">
+                <ul>
+
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="song_image">
+                                    <img src="images/releaseImage.png" />
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Imagine Dragons</span>
+                                    <span class="artist_name">Pop Band</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-c favourite">
+                                <div class="flex-c album_dropdown">
+                                    <input type="checkbox" id="optionCheck1" />
+                                    <label for="optionCheck1"><i class="fa fa-ellipsis-h"></i></label>
+                                    <div class="flex-r album_dropdown_menu">
+                                        <ul>
+                                            <li><span><i class="fa fa-play"></i> Play</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-plus"></i> Add to Queue</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-plus-square"></i> Add to Favourites</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-info-circle"></i> Info</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span style="font-size: x-small;">4.44</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="song_image">
+                                    <img src="images/releaseImage.png" />
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Imagine Dragons</span>
+                                    <span class="artist_name">Pop Band</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-c favourite">
+                                <div class="flex-c album_dropdown">
+                                    <input type="checkbox" id="optionCheck2" />
+                                    <label for="optionCheck2"><i class="fa fa-ellipsis-h"></i></label>
+                                    <div class="flex-r album_dropdown_menu">
+                                        <ul>
+                                            <li><span><i class="fa fa-play"></i> Play</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-plus"></i> Add to Queue</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-plus-square"></i> Add to Favourites</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-info-circle"></i> Info</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span style="font-size: x-small;">4.44</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="song_image">
+                                    <img src="images/releaseImage.png" />
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Imagine Dragons</span>
+                                    <span class="artist_name">Pop Band</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-c favourite">
+                                <div class="flex-c album_dropdown">
+                                    <input type="checkbox" id="optionCheck3" />
+                                    <label for="optionCheck3"><i class="fa fa-ellipsis-h"></i></label>
+                                    <div class="flex-r album_dropdown_menu">
+                                        <ul>
+                                            <li><span><i class="fa fa-play"></i> Play</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-plus"></i> Add to Queue</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-plus-square"></i> Add to Favourites</span></li>
+                                            <hr>
+                                            <li><span><i class="fa fa-info-circle"></i> Info</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span style="font-size: x-small;">4.44</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="flex-r queueHeader">
+                <span class="header">Recently Played</span>
+                <span class="viewAll">View All</span>
+            </div>
+
+            <div class="queue">
+                <ul>
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>01</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Memories</span>
+                                    <span class="artist_name">Maroon 5</span>
+                                </div>
+                            </div>
+
+                            <div class="favourite">
+                                <input type="checkbox" id="favCheck1" />
+                                <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number" style="display: none;">
+                                    <span>02</span>
+                                </div>
+                                <div class="flex-r music_bars">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Believer</span>
+                                    <span class="artist_name">Imagine Dragons</span>
+                                </div>
+                            </div>
+
+                            <div class="favourite">
+                                <input type="checkbox" id="favCheck2" />
+                                <label for="favCheck2"><span><i class="fa fa-heart"></i></span></label>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>03</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Rise</span>
+                                    <span class="artist_name">Jonas Blue</span>
+                                </div>
+                            </div>
+
+                            <div class="favourite">
+                                <input type="checkbox" id="favCheck3" />
+                                <label for="favCheck3"><span><i class="fa fa-heart"></i></span></label>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>04</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Paris</span>
+                                    <span class="artist_name">The Chainsmokers</span>
+                                </div>
+                            </div>
+
+                            <div class="favourite">
+                                <input type="checkbox" id="favCheck4" />
+                                <label for="favCheck4"><span><i class="fa fa-heart"></i></span></label>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>05</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">Something Just Like This</span>
+                                    <span class="artist_name">The Chainsmokers & Coldplay</span>
+                                </div>
+                            </div>
+
+                            <div class="favourite">
+                                <input type="checkbox" id="favCheck5" />
+                                <label for="favCheck5"><span><i class="fa fa-heart"></i></span></label>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="flex-r song">
+
+                            <div class="flex-r song_image_details">
+                                <div class="flex-c song_number">
+                                    <span>06</span>
+                                </div>
+                                <div class="song_image">
+                                    <img src="images/songImage1.png" />
+                                    <div class="play_btn">
+                                        <span><i class="fa fa-play"></i></span>
+                                    </div>
+                                </div>
+                                <div class="flex-c song_details">
+                                    <span class="song_name">All We Know</span>
+                                    <span class="artist_name">The Chainsmokers</span>
+                                </div>
+                            </div>
+
+                            <div class="favourite">
+                                <input type="checkbox" id="favCheck8" />
+                                <label for="favCheck8"><span><i class="fa fa-heart"></i></span></label>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-r music_player">
+        <div class="flex-r music_details">
+            <div class="music_image">
+                <img src="images/songImage1.png" />
+            </div>
+            <div class="flex-c music_name">
+                <span class="song_name">Believer</span>
+                <span class="artist_name">Imagine Dragons</span>
+            </div>
+            <div class="flex-r other">
+                <input type="checkbox" id="musicFav1" />
+                <label for="musicFav1"><span><i class="fa fa-heart"></i></span></label>
+                <span><i class="fa fa-ban"></i></span>
+            </div>
+        </div>
+        <div class="flex-c music_controls">
+            <div class="flex-r music_buttons">
+                <span><i class="fa fa-random"></i></span>
+                <span><i class="fa fa-step-backward"></i></span>
+                <input type="checkbox" id="play_pause" />
+                <label id="play" for="play_pause"><span><i class="fa fa-2x fa-play-circle"></i></span></label>
+                <label id="pause" for="play_pause"><span><i class="fa fa-2x fa-pause-circle"></i></span></label>
+                <span><i class="fa fa-step-forward"></i></span>
+                <span><i class="fa fa-repeat"></i></span>
+            </div>
+            <div class="flex-r music_progress">
+                <span style="margin-right: 10px;">1.44</span>
+                <div class="progress_bar1">
+                    <div class="point"></div>
+                </div>
+                <div class="progress_bar2">
+
+                </div>
+                <span style="margin-left: 10px;">4.50</span>
+            </div>
+        </div>
+        <div class="flex-r volume_controls">
+            <span style="margin-right: 8px;"><i class="fa fa-sliders-h"></i></span>
+            <span style="margin-right: 8px;"><i class="fa fa-volume-up"></i></span>
+            <div class="progress_bar1">
+                <div class="point"></div>
+            </div>
+            <div class="progress_bar2" style="margin-right: 8px;">
+
+            </div>
+            <span><i class="fa fa-expand-alt"></i></span>
+        </div>
+    </div>
+    <script> </script>
+</body>
+
+</html>
